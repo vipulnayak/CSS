@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        .navbar {
+            background-color: rgb(76, 67, 131);
+            border-radius: 20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+
+            list-style: none;
+            float: left;
+            /* display: inline-block; */
+            padding: 13px;
+        }
+
+        .navbar li a {
+            padding: 6px 6px;
+            text-decoration: none;
+            margin: 15px 15px;
+            color: white;
+            font-size: 26px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .navbar li a:hover{
+            color: indigo;
+        }
+
+        .search{
+            float: right;
+            padding: 6px 9px;
+            margin: 0px 28px;
+        }
+
+        .navbar input{
+            border: 3px solid darkblue;
+            border-radius: 17px;
+            padding: 3px;
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">home</a> </li>
+                <li><a href="">services</a> </li>
+                <li><a href="">info</a> </li>
+                <li><a href="">contact us</a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search in this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

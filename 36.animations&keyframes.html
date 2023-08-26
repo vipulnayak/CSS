@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & keyframes</title>
+    <style>
+        .container{
+            background-color: rgb(158, 46, 46);
+        }
+        .box{
+            width: 300px;
+            height: 330px;
+            background-color: aqua;
+            position: relative;
+            /* animation-name: harry; */
+            animation-name: harry2;
+            animation-duration: 3.5s;
+            animation-iteration-count: 2;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate-reverse; */
+
+            /* these properties can be written in this shorthand */
+            /* animation: animationname,duration,timing function, delay,animation iteration count, animation fill mode ; */
+            animation: harry2 4.2s ease-in 1s 4 forwards;
+        }
+
+        @keyframes harry2 {
+            0%{
+                top: 0px;
+                left: 25px;
+            }
+            50%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+            
+        }
+        
+        @keyframes harry {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 600px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          this is a box
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- animation-iteration-count is the type where the animation is repeated acoording to the users requirements -->
+<!-- animation-duration is the amount of time required to do express the animations  -->
+<!-- animation-fill-mode is the type where forwards and alternate are the types in which forwards go and stop after the iteration count and alternate is the type which complete the iteration and return the point to where it started -->
+<!-- animation timing function has some types in which easein and ease out is used so in ease in it starts slow and ends fastly and easeout is used so that it starts fast and ends slowly -->
+<!-- animation delay is used for a delaayed start at a given time -->

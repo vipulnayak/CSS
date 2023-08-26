@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS  Selectors</title>
+</head>
+<style>
+   h1{
+    background-color: aqua;
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+   } 
+
+/* if p is contained by any li which is contained by div then the text is being edited
+   div li p{
+    font-weight: bold;
+    color: cornflowerblue;
+    background-color: khaki;
+} */
+
+
+   /* it will edit all the p text which is written in div  */
+   /* div p{
+    font-weight: bold;
+    color: cornflowerblue;
+    background-color: khaki;
+} */
+
+/* div> p{
+    font-weight: bold;
+    color: cornflowerblue;
+    background-color: khaki;} */
+
+    /* div + p{
+        color: white;
+        background-color: darkolivegreen;
+    } */
+</style>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>this is a paragraph</p>
+            <ul>
+                <li><p>this ia list inside paragraph</p></li>
+            </ul>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is the outermost paragraph</p>
+</body>
+</html>
+
+<!-- div>p is a tag used when the text written in the direct contact with the parent clss(div) is printed and restt other subb child class are not given style by the that upper tag -->
+<!-- div+p is tag used when the div is usedd and then a paragraph tag was used such paragraph willl be edited in this tag  -->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 3px solid rgb(28, 138, 116);
+            background-color: rgb(163, 34, 75);
+            padding: 30px;
+            margin: 25px auto;
+            width: 700px;
+        }
+
+        .btn {
+            background-color: darksalmon;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 7px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* btn class is done with hover here */
+        .btn:hover {
+            color: aqua;
+            border: 3px solid blue;
+        }
+
+        /* when the arrow is took near the button shape font */
+        a:hover {
+            color: aqua;
+            border: 3px solid blue;
+        }
+
+        a:active {
+            background-color: darkblue;
+        }
+
+        /* once the page being visited to let the visitor know this is used */
+        a:visited {
+            color: yellow;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="id1">
+        <h2>this is a paragraph</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptas unde sequi accusantium, dolor
+            necessitatibus cupiditate minima sint iste quod laboriosam reiciendis nobis provident consectetur mollitia,
+            sed dolorum facere possimus, ipsam asperiores pariatur facilis. Pariatur labore voluptatibus molestiae
+            dolorum cupiditate!</p>
+        <a href="http://google.com" class="btn">read more!!</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- hover means when the arrow is kept on any link type file it is used to chnage colour ex: a:hover{} -->
+<!-- visited pages link can be changed so that the user gets to know that link was once opened before -->
+<!-- button tag is used to create a button which will redirect to something -->

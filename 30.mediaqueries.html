@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        .box {
+            background-color: yellow;
+            color: black;
+            font-size: 70px;
+            text-align: center;
+            display: none;
+        }
+       @media (max-width:300px) {
+        #box-1{
+            display: block;
+        }
+       } 
+
+       @media (max-width:500px) and (min-width:300px) {
+        #box-2{
+            display: block;
+        }
+       }    
+
+       @media (max-width:800px) and (min-width:500px) {
+        #box-3{
+            display: block;
+        }
+       }       
+
+       @media  (min-width:800px) {
+        #box-4{
+            display: block;
+        }
+       }       
+        
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">i am a disco dancer</div>
+    <div class="box" id="box-2">i am hiphop dancer</div>
+    <div class="box" id="box-3">i am a break dancer</div>
+    <div class="box" id="box-4">i am a belli dancer</div>
+</body>
+</html>
+
+
+
+<!-- media means it will given a min-width and max-width were it will display the text which is given under min width and max height so it  is used to display the text required at particular width size  -->
+<!-- media screen is a tag which will make the display text to screens only such as computer screens, tab, mobile etc  -->

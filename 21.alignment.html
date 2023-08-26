@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 800px;
+            border: 3px solid rgb(181, 31, 8);
+            margin: auto;
+        }
+        body{
+            font-family: "Sofia", sans-serif;
+        }
+        
+        .items {
+            border: 3px solid grey;
+            padding: 12px 3px;
+            margin: 12px 3px;
+            background-color: rgba(109, 163, 199, 0.215);
+            /* last place in that tag is to blur the pages  */
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            width: 100%;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="items">
+            <h2>Fruits</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis, hic laudantium a temporibus
+                laborum porro amet. Quia omnis, eligendi alias numquam mollitia assumenda maxime, quaerat quam,
+                dignissimos repudiandae distinctio Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus consequatur odio voluptatum, doloribus illum praesentium libero ea laboriosam. Dolorum corrupti dolore itaque maxime animi omnis magni recusandae. Quidem voluptatem explicabo tempore atque expedita?</p>
+        </div>
+
+        <div id="computer" class="items">
+            <h2>Computer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis itaque illo maiores aliquam repellat
+                fugit explicabo accusantium neque laudantium voluptatum ad est id illum error, voluptatem tempore
+                deserunt deleniti in Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur molestias nemo obcaecati omnis provident mollitia ullam. A incidunt odio quasi iusto autem minima nam est voluptates. Quidem rem necessitatibus at dolore molestiae id..</p>
+        </div>
+
+
+        <div id="stationary" class="items">
+            <h2>Stationary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti officiis minus odio voluptatibus maxime
+                id, officia illum nihil obcaecati iure architecto sint similique. Voluptate nulla atque, minus dolorum
+                magnam illum.</p>
+        </div>
+        <div id="glass" class="items">
+            <h2>glass</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti officiis minus odio voluptatibus maxime
+                id, officia illum nihil obcaecati iure architecto sint similique. Voluptate nulla atque, minus dolorum
+                magnam illum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

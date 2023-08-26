@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+        }
+        .box{
+            border: 3px solid green;
+            margin: 6px;
+            padding: 3px;
+            height: 5rem;
+            width: 5rem;
+            background-color: burlywood;
+        }
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu li{
+            padding: 15px 20px;
+            margin: 20px 25px;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <nav class="navbar">
+            <!-- mid -->
+            <ul class="menu">
+                <li>Home</li>
+                <li>Discover</li>
+                <li>Search</li>
+                <li>Recent</li>
+                <p>vipul's website</p>
+            </ul>
+            <!-- left -->
+            <div class="leftmenu">
+            </div>
+        </nav>
+    </header>
+    <!-- main body  -->
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+    </div>
+</body>
+</html>

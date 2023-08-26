@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+
+    .card{
+        padding: 23px ;
+        border: 3px solid black;
+        margin: 23px;
+        background: burlywood;
+        /* box-shadow: 10px 15px grey ; */
+        /* box-shadow: -19px -21px grey ; */
+        /* box-shadow: 5px 10px 4px grey; */
+        /* box-shadow: -5px -10px 4px grey; */
+        /* box-shadow: 5px 10px 4px 13px rgba(74, 114, 193, 0.2);    offset-y offset-x (blur radius) (spread radius) color (it can be written as rgba whwerre the alpha works as the dakrness range of colour) */
+        box-shadow: inset 15px 19px green;
+
+        box-shadow: 3px 3px green, 34px 23px red;
+    }
+
+   .card h1{
+        /* text-shadow: 4px 6px cadetblue; */
+        /* text-shadow: 4px 6px 6px  cadetblue; */
+        text-shadow: -4px -6px 6px  cadetblue;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>this is html course,card1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eum ab tenetur molestias ratione quo eaque possimus illo quod, dicta, aspernatur laborum alias numquam!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>this is css course,card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab vero aliquam veniam dolor tempore, id impedit, assumenda excepturi magni ratione voluptatem at ad dolore consequatur. </p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>i will compplete html and css ,card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusantium libero dolorem illum, veniam neque ipsum aspernatur, porro omnis aliquam, repellendus nam! Iusto nesciunt dolor earum!</p>
+        </div>
+    </div>
+</body>
+</html>

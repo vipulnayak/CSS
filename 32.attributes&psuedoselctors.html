@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and child psuedo selectors</title>
+<style>
+    .container{
+        display: block;
+        margin: auto;
+        width: 33%;
+    }
+    input{
+        display: block;
+    }
+
+    input[type="text"]{
+        padding: 5px;
+        margin: 4px;
+        border: 3px solid black;
+    }
+
+    input[type="password"]{
+        padding: 5px;
+        margin: 4px;
+        border: 3px solid black;
+    }
+    input[type="submit"]{
+        padding: 5px;
+        margin: 4px;
+        border: 3px solid black;
+    }
+    a[target]{
+        font-size: 35px;
+        color: rgb(128, 30, 30);
+    }
+
+    /* this will apply css for third child  */
+    li:nth-child(7){
+        border:2px solid red;
+        color: cyan;
+    }
+
+
+    /* this will apply for all the n multiples of 2 ex:n=0,1,2,3,4,5, */
+    li:nth-child(2n+0){color: blue;}
+
+/* odd child (smilarly with even child) */
+    li:nth-child(odd){color: blueviolet;}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+        <form action="" class="form.control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+
+        </form>
+        <ul>
+            <li class="items" id="item1">item1</li>
+            <li class="items" id="item2">item2</li>
+            <li class="items" id="item3">item3</li>
+            <li class="items" id="item4">item4</li>
+            <li class="items" id="item5">item5</li>
+            <li class="items" id="item7">item7</li>
+            <li class="items" id="item8">item8</li>
+            <li class="items" id="item9">item9</li>
+            <li class="items" id="item10">item10</li>
+            
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+<!-- take a choosen input[type=""] and add style css to that type ex:password,text,email,submit -->
+<!-- take the a[target=""] and add style to that css  -->
+<!-- /* this will apply for all the n multiples of 2 ex:n=0,1,2,3,4,5, */ -->
